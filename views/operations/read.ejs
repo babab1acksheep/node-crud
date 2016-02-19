@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="/javascript/jquery-2.2.0.min.js"></script>
+    <script src="/javascript/custom.js"></script>    
+  </head>
+  <body>
+  
+  <% include ../templates/header.ejs %>
+    <h1><%= title %></h1>
+        <form action="findEmployee" method="post">
+        <fieldset>
+            <label for="name">Employee ID:</label>
+            <input type="text" id="id" name="empId" placeholder="Enter the employee ID" />
+			<br>
+            <input type="submit" id="findEmp" value="Find" />
+        </fieldset>
+    </form>   
+  </body>
+</html>
